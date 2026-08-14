@@ -1,11 +1,12 @@
 class Solution {
    public:
     vector<vector<int>> kClosest(vector<vector<int>>& points, int k) {
-        // k closest points to the origin
-        // distance between two points are
-        // sqrt((x1-x2)^2 + (y1-y1)^2)
-        //(sqrt((0,2) + (0,0)).
-        //  sqrt : 4+0 = 2
+    // k closest points to the origin
+   // Distance = sqrt((x1-x2)^2 + (y1-y2)^2)
+   // For (0,2) and (0,0):
+   // sqrt((0-0)^2 + (2-0)^2)
+   // = sqrt(4)
+   // = 2
         vector<vector<int>> ans;
         priority_queue<pair<double, pair<int, int>>> pq;
 
